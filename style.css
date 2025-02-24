@@ -1,0 +1,230 @@
+/* fonts */
+/* ----------------------------------- */
+@font-face {
+    font-family: '1454_gutenberg_bibe';
+    src: url('fonts/1454_gutenberg_bibe/1454 Gutenberg Bibel.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'we-the-people';
+    src: url('fonts/we-the-people/WeThePeople.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'essays1743';
+    src: url('fonts/essays1743/Essays1743.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'essays1743-Bold';
+    src: url('fonts/essays1743/Essays1743-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'essays1743-Italic';
+    src: url('fonts/essays1743/Essays1743-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'essays1743-BoldItalic';
+    src: url('fonts/essays1743/Essays1743-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'janeausten';
+    src: url('fonts/janeausten/JaneAusU.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'courier-prime';
+    src: url('fonts/courier-prime/Courier Prime/Courier Prime.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'courier-prime-Bold';
+    src: url('fonts/courier-prime/Courier Prime/Courier Prime Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'courier-prime-Italic';
+    src: url('fonts/courier-prime/Courier Prime/Courier Prime Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'courier-prime-BoldItalic';
+    src: url('fonts/courier-prime/Courier Prime/Courier Prime Bold Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hack-Regular';
+    src: url('fonts/Hack-v3.003-ttf/ttf/Hack-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hack-Bold';
+    src: url('fonts/Hack-v3.003-ttf/ttf/Hack-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hack-Italic';
+    src: url('fonts/Hack-v3.003-ttf/ttf/Hack-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hack-BoldItalic';
+    src: url('fonts/Hack-v3.003-ttf/ttf/Hack-BoldItalic.ttf') format('truetype');
+}
+/* ----------------------------------- */
+
+.myContainer {
+    margin:auto;
+    width:100%;
+    height:100%;
+    background-color: black;
+}
+
+#top_div {
+    margin:auto;
+    width:1080px;
+    height:100%;
+    background-color: black;
+}
+
+/* left section */
+/* ----------------------------------- */
+.left-section {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+    min-width: 180px;
+    margin-right:5px;
+}
+
+.logo {
+    display: inline-block;
+    color: #3EFC03;
+}
+
+#logo-text1 {
+    font-family: 'janeausten';
+    font-size: 25px;
+    display: inline-block;
+}
+
+#logo-text2 {
+    font-family: 'Hack-Regular';
+    font-size: 25px;
+    display: inline-block;
+}
+
+#terminal {
+    display: inline-block;
+    margin-top: 20;
+    margin-bottom: 10;
+    width: 15px;
+    height: 26.4px;
+}
+
+.col-1 {
+    font-family: 'essays1743';
+    vertical-align: top;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    height: 100%;
+    width: 180px;
+    color: #FFFFFF;
+}
+/* ----------------------------------- */
+
+/* right section */
+/* ----------------------------------- */
+.right-section {
+    vertical-align: top;
+    display: inline-block;
+    min-width: 720px;
+    max-width: 82%;
+}
+
+#title_div {
+    color: #FFFFFF
+}
+
+#article_text_div {
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+/* ----------------------------------- */
+
+/* header style */
+/* ----------------------------------- */
+#header {
+    width: 100%;
+}
+
+/* left header style */
+#left-header {
+    display: inline-block;
+    text-align: left;
+    color: #FFFFFF;
+    width: 20%;
+}
+
+#about {
+    display: inline-block;
+}
+
+#rss {
+    display: inline-block;
+}
+
+#social_media {
+    display: inline-block;
+}
+
+/* home header style */
+#home {
+    display: inline-block;
+    color: #3EFC03;
+    text-align: center;
+    width: 59%;
+}
+
+#home-title {
+    display: inline-block;
+    font-family: 'we-the-people';
+    color: #3EFC03;
+    text-align: center;
+}
+
+#home-subtitle {
+    display: inline-block;
+    font-family: 'essays1743';
+    color: #3EFC03;
+    text-align: center;
+}
+
+/* right header style */
+#right-header {
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+}
+
+#search{
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+#signin{
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+#subscribe{
+    display: inline-block;
+    color: #000000;
+}
+/* ----------------------------------- */
