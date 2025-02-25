@@ -13,18 +13,37 @@ document.addEventListener('DOMContentLoaded', function (){
         counter++;
     }, speed);
 
-    const article = document.getElementById('article_text_div');
-    fetch('articles/test.txt')
-    .then((res) => res.text())
-    .then((text) => {
-        article.innerHTML = text;
-    })
-    .catch((e) => console.error(e));
+    // const conatinerDiv = document.getElementById('container');
+    // fetch('layouts/home.html').then((res) => res.text())
+    //                           .then((text) => {
+    //                             conatinerDiv.innerHTML = text;
+    //                           })
+    //                           .catch((e) => console.error(e));
 
-    var img = document.createElement('img');
-    img.src = 'images/test.jpg';
-    img.width = 885.6;
-
-    var src = document.getElementById('image_div');
-    src.appendChild(img);
+    articlePage('images/test.jpg',885.6,'articles/test.txt');
 })
+
+function articlePage(imagePath,
+                     imageWidth,
+                     articlePath){
+    const containerDiv = document.getElementById('container');
+    fetch('layouts/article.html').then((res) => res.text())
+                                 .then((text) => {
+                                    containerDiv.innerHTML = text;
+                                    const article = document.getElementById('article_text_div');
+                                    console.log(article)
+                                    fetch(articlePath).then((res) => res.text())
+                                                      .then((text) => {
+                                                        article.innerHTML = text;
+                                                      })
+                                                      .catch((e) => console.error(e));
+
+                                    var img = document.createElement('img');
+                                    img.src = imagePath;
+                                    img.width = imageWidth;
+
+                                    var src = document.getElementById('image_div');
+                                    src.appendChild(img);
+                                 })
+                                 .catch((e) => console.error(e));
+}

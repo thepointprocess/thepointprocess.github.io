@@ -117,14 +117,6 @@
     display: inline-block;
 }
 
-#terminal {
-    display: inline-block;
-    margin-top: 20;
-    margin-bottom: 10;
-    width: 15px;
-    height: 26.4px;
-}
-
 .col-1 {
     font-family: 'essays1743';
     vertical-align: top;
@@ -204,6 +196,14 @@
     font-family: 'essays1743';
     color: #3EFC03;
     text-align: center;
+}
+
+#terminal {
+    display: inline-block;
+    margin-top: 20;
+    margin-bottom: 0;
+    width: 15px;
+    height: 30px;
 }
 
 /* right header style */
