@@ -20,7 +20,15 @@ document.addEventListener('DOMContentLoaded', function (){
     //                           })
     //                           .catch((e) => console.error(e));
 
-    articlePage('images/test.jpg',885.6,'articles/test.txt');
+    //articlePage('images/test.jpg',885.6,'articles/test.txt');
+
+    //document.location = 'about'
+    const conatinerDiv = document.getElementById('container');
+    fetch('layouts/about.html').then((res) => res.text())
+                              .then((text) => {
+                                conatinerDiv.innerHTML = text;
+                              })
+                              .catch((e) => console.error(e));
 })
 
 function articlePage(imagePath,
@@ -46,4 +54,22 @@ function articlePage(imagePath,
                                     src.appendChild(img);
                                  })
                                  .catch((e) => console.error(e));
+}
+
+function homePage(){
+    const containerDiv = document.getElementById('container');
+    fetch('layouts/home.html').then((res) => res.text())
+                              .then((text) => {
+                                containerDiv.innerHTML = text;
+                              })
+                              .catch((e) => console.error(e));
+}
+
+function aboutPage(){
+    const conatinerDiv = document.getElementById('container');
+    fetch('layouts/about.html').then((res) => res.text())
+                              .then((text) => {
+                                conatinerDiv.innerHTML = text;
+                              })
+                              .catch((e) => console.error(e));
 }

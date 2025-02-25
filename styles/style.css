@@ -166,6 +166,7 @@
 
 #about {
     display: inline-block;
+    cursor: pointer;
 }
 
 #rss {
@@ -189,6 +190,8 @@
     font-family: 'we-the-people';
     color: #3EFC03;
     text-align: center;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 #home-subtitle {
@@ -196,6 +199,7 @@
     font-family: 'essays1743';
     color: #3EFC03;
     text-align: center;
+    margin-top: 0;
 }
 
 #terminal {
@@ -228,3 +232,10 @@
     color: #000000;
 }
 /* ----------------------------------- */
+
+#about_div {
+    color: #FFFFFF;
+    min-width: 720px;
+    max-width: 82%;
+    margin-left: 100px;
+}
