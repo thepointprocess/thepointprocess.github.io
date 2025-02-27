@@ -173,7 +173,11 @@
     display: inline-block;
 }
 
-#social_media {
+#mastodon {
+    display: inline-block;
+}
+
+#reddit {
     display: inline-block;
 }
 
